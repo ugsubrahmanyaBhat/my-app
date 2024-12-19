@@ -28,6 +28,11 @@ export function StatsCards() {
           </div>
         </div>
       </div>
+      <div className="bg-[#0B1929] p-6 rounded-lg">
+        <h3 className="text-gray-400 mb-2">Latest Block</h3>
+        <div className="text-3xl font-bold">Block #355,733</div>
+        <div className="text-sm text-gray-400 mt-2">1 transactions, a few seconds ago</div>
+      </div>
     </div>
   )
 }

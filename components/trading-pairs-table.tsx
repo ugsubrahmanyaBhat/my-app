@@ -25,6 +25,7 @@ interface TradingPair {
   volume1d: string
   volume7d: string
   liquidity: string
+  marketcap: string
 }
 
 const tradingPairs: TradingPair[] = [
@@ -42,7 +43,8 @@ const tradingPairs: TradingPair[] = [
     volume6h: "$18.16k",
     volume1d: "$22.40k",
     volume7d: "$129.05k",
-    liquidity: "$5.02k"
+    liquidity: "$5.02k",
+    marketcap: "$129.05k"
   },
   {
     favorite: false,
@@ -58,7 +60,8 @@ const tradingPairs: TradingPair[] = [
     volume6h: "$608.38",
     volume1d: "$799.19",
     volume7d: "$6.74k",
-    liquidity: "$47.84k"
+    liquidity: "$47.84k",
+    marketcap: "$12.05k"
   },
   // Add more trading pairs as needed
 ]
@@ -130,6 +133,7 @@ export function TradingPairsTable() {
               <th className="text-right p-4">1D VOLUME</th>
               <th className="text-right p-4">7D VOLUME</th>
               <th className="text-right p-4">LIQUIDITY</th>
+              <th className="text-right p-4">MARKETCAP</th>
             </tr>
           </thead>
           <tbody>
@@ -158,6 +162,7 @@ export function TradingPairsTable() {
                 <td className="p-4 text-right text-white">{pair.volume1d}</td>
                 <td className="p-4 text-right text-white">{pair.volume7d}</td>
                 <td className="p-4 text-right text-white">{pair.liquidity}</td>
+                <td className="p-4 text-right text-white">{pair.marketcap}</td>
               </tr>
             ))}
           </tbody>

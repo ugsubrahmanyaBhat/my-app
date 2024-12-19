@@ -72,6 +72,7 @@ export function MainSidebar() {
     >
       <SidebarContent>
         <div className="mb-4 p-4 text-white">
+          {/*
           <Link href="/" className="flex items-center">
             <img 
               src="/placeholder.svg?height=32&width=32" 
@@ -80,6 +81,8 @@ export function MainSidebar() {
             />
             {isHovered && <span className="ml-2 text-lg font-bold">STX Tools</span>}
           </Link>
+          */}
+          {isHovered && <span className="ml-2 text-lg font-bold">STX Tools</span>}
         </div>
         <SidebarMenu>
           {menuItems.map((item) => (

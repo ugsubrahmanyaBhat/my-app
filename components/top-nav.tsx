@@ -22,12 +22,15 @@ export function TopNav() {
             <span className="text-white">$0.000455</span>
           </div>
         </div>
-      </div>
-      <Button className="bg-[#00A4FF] hover:bg-[#0093E9]">
+        
+      
+      <Button className="flex items-center space-x-2 bg-[#00A4FF] hover:bg-[#0093E9]">
         <Wallet2 className="mr-2 h-4 w-4" />
         Connect Wallet
       </Button>
+
+      </div>
+      
     </div>
   )
 }
-
