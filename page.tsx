@@ -1,11 +1,11 @@
-import { TopNav } from "@/components/top-nav"
-import { TopGainers } from "@/components/top-gainers"
-import { StatsCards } from "@/components/stats-cards"
-import { PriceChart } from "@/components/price-chart"
-import { RecentSwaps } from "@/components/recent-swaps"
-import { TradingPairsTable } from "@/components/trading-pairs-table"
-import { Footer } from "@/components/footer"
-import { MainSidebar } from "@/components/main-sidebar"
+import { TopNav } from "./components/top-nav"
+import { TopGainers } from "./components/top-gainers"
+import { StatsCards } from "./components/stats-cards"
+import { PriceChart } from "./components/price-chart"
+import { RecentSwaps } from "./components/recent-swaps"
+import { TradingPairsTable } from "./components/trading-pairs-table"
+import { Footer } from "./components/footer"
+import { MainSidebar } from "./components/main-sidebar"
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
 
 export default function Page() {
@@ -32,3 +32,4 @@ export default function Page() {
     </SidebarProvider>
   )
 }
+
