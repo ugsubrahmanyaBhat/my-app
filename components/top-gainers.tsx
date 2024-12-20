@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpRight, ArrowDownRight } from 'lucide-react'
+
 
 const gainers = [
   { rank: 3, symbol: 'MEGA', change: '+4.37%' },
