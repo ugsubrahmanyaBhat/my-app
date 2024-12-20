@@ -12,52 +12,15 @@ import {
 } from "@/components/ui/sidebar"
 
 const menuItems = [
-  {
-    title: 'Dashboard',
-    icon: BarChart2,
-    href: '/dashboard'
-  },
-  {
-    title: 'Tokens',
-    icon: Coins,
-    href: '/tokens'
-  },
-  {
-    title: 'Pools',
-    icon: Droplets,
-    href: '/pools'
-  },
-  {
-    title: 'NFTs',
-    icon: ImageIcon,
-    href: '/nfts',
-    badge: 'NEW'
-  },
-  {
-    title: 'LunarCrush',
-    icon: Moon,
-    href: '/lunar-crush'
-  },
-  {
-    title: 'Analytics',
-    icon: PieChart,
-    href: '/analytics'
-  },
-  {
-    title: 'Whale Watcher',
-    icon: Eye,
-    href: '/whale-watcher'
-  },
-  {
-    title: 'My Portfolio',
-    icon: Wallet,
-    href: '/portfolio'
-  },
-  {
-    title: 'Profile',
-    icon: User,
-    href: '/profile'
-  }
+  { title: 'Dashboard', icon: BarChart2, href: '/dashboard' },
+  { title: 'Tokens', icon: Coins, href: '/tokens' },
+  { title: 'Pools', icon: Droplets, href: '/pools' },
+  { title: 'NFTs', icon: ImageIcon, href: '/nfts', badge: 'NEW' },
+  { title: 'LunarCrush', icon: Moon, href: '/lunar-crush' },
+  { title: 'Analytics', icon: PieChart, href: '/analytics' },
+  { title: 'Whale Watcher', icon: Eye, href: '/whale-watcher' },
+  { title: 'My Portfolio', icon: Wallet, href: '/portfolio' },
+  { title: 'Profile', icon: User, href: '/profile' }
 ]
 
 export function MainSidebar() {
@@ -72,16 +35,6 @@ export function MainSidebar() {
     >
       <SidebarContent>
         <div className="mb-4 p-4 text-white">
-          {/*
-          <Link href="/" className="flex items-center">
-            <img 
-              src="/placeholder.svg?height=32&width=32" 
-              alt="STX Tools" 
-              className="h-8 w-8"
-            />
-            {isHovered && <span className="ml-2 text-lg font-bold">STX Tools</span>}
-          </Link>
-          */}
           {isHovered && <span className="ml-2 text-lg font-bold">STX Tools</span>}
         </div>
         <SidebarMenu>
