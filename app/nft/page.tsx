@@ -7,6 +7,7 @@ import { TradingPairsTable } from "@/components/trading-pairs-table"
 import { Footer } from "@/components/footer"
 import { MainSidebar } from "@/components/main-sidebar"
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
+import CollectionsPage from "@/components/nft-table"
 
 export default function Page() {
   return (
@@ -16,18 +17,7 @@ export default function Page() {
         <SidebarInset className="flex flex-col flex-1 bg-[#061624]">
           <TopNav />
           <TopGainers />
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4">
-              {/*<PriceChart />*/}
-              <RecentSwaps />
-              <div className="container flex-1 ml-2 mr-auto">
-            <StatsCards />
-            </div>
-
-            </div>
-            <div className="p-4">
-              <TradingPairsTable />
-            </div>
-          
+        <CollectionsPage />        
           <Footer />
         </SidebarInset>
       </div>

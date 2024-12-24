@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { BarChart2, Coins, Droplets, ImageIcon, Moon, PieChart, Eye, Wallet, User } from 'lucide-react'
 import Link from 'next/link'
+
 import {
   Sidebar,
   SidebarContent,
@@ -12,10 +13,10 @@ import {
 } from "@/components/ui/sidebar"
 
 const menuItems = [
-  { title: 'Dashboard', icon: BarChart2, href: '/dashboard' },
+  { title: 'Dashboard', icon: BarChart2, href: '/' },
   { title: 'Tokens', icon: Coins, href: '/tokens' },
-  { title: 'Pools', icon: Droplets, href: '/pools' },
-  { title: 'NFTs', icon: ImageIcon, href: '/nfts', badge: 'NEW' },
+  { title: 'Pools', icon: Droplets, href: '/pool' },
+  { title: 'NFTs', icon: ImageIcon, href: '/nft', badge: 'NEW' },
   { title: 'LunarCrush', icon: Moon, href: '/lunar-crush' },
   { title: 'Analytics', icon: PieChart, href: '/analytics' },
   { title: 'Whale Watcher', icon: Eye, href: '/whale-watcher' },
